@@ -1,17 +1,18 @@
-const likeButton = document.querySelector('.like');
-const commentButton = document.querySelector('.comment');
-const commentsContainer = document.querySelector('.comments');
+// scripts.js
 
-likeButton.addEventListener('click', () => {
-    // Logika untuk menghitung dan menampilkan jumlah like
-    alert('Like added!');
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const commentBtn = document.querySelector('.post-comment-btn');
+    const commentsList = document.querySelector('.comments-list');
+    const textarea = document.querySelector('textarea');
 
-commentButton.addEventListener('click', () => {
-    const comment = prompt('Enter your comment');
-    if (comment) {
-        const newComment = document.createElement('p');
-        newComment.textContent = comment;
-        commentsContainer.appendChild(newComment);
-    }
+    commentBtn.addEventListener('click', () => {
+        const commentText = textarea.value.trim();
+        if (commentText) {
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment-item');
+            commentElement.textContent = `${commentText} - just now`;
+            commentsList.appendChild(commentElement);
+            textarea.value = '';
+        }
+    });
 });
