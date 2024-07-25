@@ -1,4 +1,74 @@
-.sruncise {
-    color: yellow;
-    /* Gaya lainnya */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcc00;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.post {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post-text {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.post-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.like-btn, .comment-btn, .post-comment-btn {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.comments-section {
+    margin-top: 10px;
+}
+
+.comments-section textarea {
+    width: calc(100% - 22px);
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comment-item {
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
