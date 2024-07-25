@@ -1,46 +1,28 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const likeBtn = document.querySelector('.like-btn');
-    const likeCount = document.querySelector('.like-count');
-    const addCommentBtn = document.querySelector('.add-comment-btn');
-    const commentInput = document.querySelector('.comment-input');
-    const commentsList = document.querySelector('.comments-list');
+const likeButton = document.querySelector('.like');
+const likeCount = document.querySelector('.like-count');
+const commentButton = document.querySelector('.comment');
+const commentsContainer = document.querySelector('.comments');
 
-    // Load comments from local storage
-    function loadComments() {
-        const comments = JSON.parse(localStorage.getItem('comments')) || [];
-        commentsList.innerHTML = '';
-        comments.forEach(comment => {
-            const commentElement = document.createElement('div');
-            commentElement.className = 'comment';
-            commentElement.innerHTML = `
-                <img src="https://via.placeholder.com/30" alt="Profile Picture" class="comment-pic">
-                <div class="comment-text">${comment}</div>
-            `;
-            commentsList.appendChild(commentElement);
-        });
+likeButton.addEventListener('click', () => {
+    let count = parseInt(likeCount.textContent);
+    count++;
+    likeCount.textContent = count;
+    // Update the count on the server using AJAX or a real-time database
+
+    // Example using a simple alert to simulate live update:
+    alert('Like updated! New count: ' + count);
+});
+
+commentButton.addEventListener('click', () => {
+    const comment = prompt('Enter your comment');
+    if (comment) {
+        const newComment = document.createElement('p');
+        newComment.textContent = comment;
+        commentsContainer.appendChild(newComment);
+
+        // Send the comment to the server using AJAX or a real-time database
+
+        // Example using a simple alert to simulate live update:
+        alert('Comment added!');
     }
-
-    // Save comments to local storage
-    function saveComment(comment) {
-        const comments = JSON.parse(localStorage.getItem('comments')) || [];
-        comments.push(comment);
-        localStorage.setItem('comments', JSON.stringify(comments));
-    }
-
-    // Load comments on page load
-    loadComments();
-
-    likeBtn.addEventListener('click', function () {
-        let count = parseInt(likeCount.textContent);
-        likeCount.textContent = count + 1;
-    });
-
-    addCommentBtn.addEventListener('click', function () {
-        const commentText = commentInput.value.trim();
-        if (commentText) {
-            saveComment(commentText);
-            loadComments();
-            commentInput.value = '';
-        }
-    });
 });
