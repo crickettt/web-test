@@ -1,32 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sruncise</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Simple Twitter Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6ecf0;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #1da1f2;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-box {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #e1e8ed;
+            padding-bottom: 10px;
+        }
+        .tweet-input {
+            border: 1px solid #e1e8ed;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tweet-btn {
+            background-color: #1da1f2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .tweet-btn:hover {
+            background-color: #0d95e8;
+        }
+        .tweet {
+            border-bottom: 1px solid #e1e8ed;
+            padding: 10px 0;
+        }
+        .tweet-content {
+            margin: 0 0 10px;
+        }
+        .tweet-actions {
+            display: flex;
+            justify-content: space-around;
+        }
+        .tweet-actions button {
+            background: none;
+            border: none;
+            color: #1da1f2;
+            cursor: pointer;
+        }
+        .tweet-actions button:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Sruncise</h1>
-    </header>
-    <main>
-        <div class="post">
-            <img src="apple.jpg" alt="Apple">
-            <p class="post-text">This is an example post with an apple image.</p>
-            <div class="post-actions">
-                <button class="like-btn">Like</button>
-                <button class="comment-btn">Comment</button>
-                <div class="comments-section">
-                    <textarea placeholder="Add a comment..."></textarea>
-                    <button class="post-comment-btn">Post</button>
-                    <div class="comments-list">
-                        <!-- Comments will be displayed here -->
-                    </div>
-                </div>
+    <div class="header">Twitter Clone</div>
+    <div class="container">
+        <div class="tweet-box">
+            <textarea class="tweet-input" rows="3" placeholder="What's happening?"></textarea>
+            <button class="tweet-btn">Tweet</button>
+        </div>
+        <div class="tweet">
+            <p class="tweet-content">This is a sample tweet!</p>
+            <div class="tweet-actions">
+                <button>Like</button>
+                <button>Reply</button>
+                <button>Retweet</button>
+                <button>Share</button>
             </div>
         </div>
-    </main>
-    <script src="scripts.js"></script>
+        <div class="tweet">
+            <p class="tweet-content">Another tweet example here.</p>
+            <div class="tweet-actions">
+                <button>Like</button>
+                <button>Reply</button>
+                <button>Retweet</button>
+                <button>Share</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
