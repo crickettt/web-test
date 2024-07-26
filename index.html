@@ -3,31 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jruk's</title>
+    <title>Explore Feed</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Explore</h1>
+            <h1>Explore Feed</h1>
         </header>
         <main>
             <section id="posts">
-                <!-- Example Post -->
+                <!-- Post 1 -->
                 <div class="post">
-                    <img src="example-image.jpg" alt="Post Image">
+                    <img src="example-image1.jpg" alt="Post Image 1">
                     <div class="post-content">
-                        <p class="caption">Testing.</p>
+                        <p class="caption">Ini adalah caption contoh untuk postingan pertama.</p>
                         <div class="actions">
-                            <button class="like-button" onclick="toggleLike(this)">
+                            <button class="like-button disabled" disabled>
                                 <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
                             </button>
-                            <button class="comment-button" onclick="toggleComments(this)">Comment</button>
+                            <button class="comment-button disabled" disabled>Comment</button>
                             <div class="comments-section">
                                 <div class="comments-list"></div>
-                                <textarea class="comment-input" placeholder="Add a comment..."></textarea>
-                                <input type="file" class="upload-image" onchange="previewImage(this)">
-                                <button class="post-comment" onclick="postComment(this)">Post</button>
+                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
+                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
+                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 2 -->
+                <div class="post">
+                    <img src="example-image2.jpg" alt="Post Image 2">
+                    <div class="post-content">
+                        <p class="caption">Ini adalah caption contoh untuk postingan kedua.</p>
+                        <div class="actions">
+                            <button class="like-button disabled" disabled>
+                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
+                            </button>
+                            <button class="comment-button disabled" disabled>Comment</button>
+                            <div class="comments-section">
+                                <div class="comments-list"></div>
+                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
+                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
+                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post 3 -->
+                <div class="post">
+                    <img src="example-image3.jpg" alt="Post Image 3">
+                    <div class="post-content">
+                        <p class="caption">Ini adalah caption contoh untuk postingan ketiga.</p>
+                        <div class="actions">
+                            <button class="like-button disabled" disabled>
+                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
+                            </button>
+                            <button class="comment-button disabled" disabled>Comment</button>
+                            <div class="comments-section">
+                                <div class="comments-list"></div>
+                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
+                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
+                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
                             </div>
                         </div>
                     </div>
