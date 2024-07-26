@@ -1,100 +1,40 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Twitter Clone</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e6ecf0;
-            margin: 0;
-            padding: 0;
-        }
-        .header {
-            background-color: #1da1f2;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 24px;
-        }
-        .container {
-            width: 600px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .tweet-box {
-            display: flex;
-            flex-direction: column;
-            border-bottom: 1px solid #e1e8ed;
-            padding-bottom: 10px;
-        }
-        .tweet-input {
-            border: 1px solid #e1e8ed;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        .tweet-btn {
-            background-color: #1da1f2;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .tweet-btn:hover {
-            background-color: #0d95e8;
-        }
-        .tweet {
-            border-bottom: 1px solid #e1e8ed;
-            padding: 10px 0;
-        }
-        .tweet-content {
-            margin: 0 0 10px;
-        }
-        .tweet-actions {
-            display: flex;
-            justify-content: space-around;
-        }
-        .tweet-actions button {
-            background: none;
-            border: none;
-            color: #1da1f2;
-            cursor: pointer;
-        }
-        .tweet-actions button:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Explore Feed</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="header">Twitter Clone</div>
     <div class="container">
-        <div class="tweet-box">
-            <textarea class="tweet-input" rows="3" placeholder="What's happening?"></textarea>
-            <button class="tweet-btn">Tweet</button>
-        </div>
-        <div class="tweet">
-            <p class="tweet-content">This is a sample tweet!</p>
-            <div class="tweet-actions">
-                <button>Like</button>
-                <button>Reply</button>
-                <button>Retweet</button>
-                <button>Share</button>
-            </div>
-        </div>
-        <div class="tweet">
-            <p class="tweet-content">Another tweet example here.</p>
-            <div class="tweet-actions">
-                <button>Like</button>
-                <button>Reply</button>
-                <button>Retweet</button>
-                <button>Share</button>
-            </div>
-        </div>
+        <header>
+            <h1>Explore Feed</h1>
+        </header>
+        <main>
+            <section id="posts">
+                <!-- Example Post -->
+                <div class="post">
+                    <img src="example-image.jpg" alt="Post Image">
+                    <div class="post-content">
+                        <p class="caption">Ini adalah caption contoh.</p>
+                        <div class="actions">
+                            <button class="like-button" onclick="toggleLike(this)">
+                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
+                            </button>
+                            <button class="comment-button" onclick="toggleComments(this)">Comment</button>
+                            <div class="comments-section">
+                                <div class="comments-list"></div>
+                                <textarea class="comment-input" placeholder="Add a comment..."></textarea>
+                                <input type="file" class="upload-image" onchange="previewImage(this)">
+                                <button class="post-comment" onclick="postComment(this)">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
