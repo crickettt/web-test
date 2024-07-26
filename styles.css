@@ -55,19 +55,20 @@ main {
     background: none;
     border: none;
     font-size: 14px;
-    cursor: pointer;
+    cursor: not-allowed; /* Disabled cursor */
+    color: #aaa; /* Gray color for disabled */
 }
 
 .like-button {
-    color: #ff5722;
+    color: #ff5722; /* Jingga */
 }
 
-.like-button.liked .like-icon {
-    color: #ff5722;
+.like-button.disabled {
+    color: #aaa; /* Gray color for disabled */
 }
 
-.comment-button {
-    color: #555;
+.comment-button.disabled {
+    color: #aaa; /* Gray color for disabled */
 }
 
 .comments-section {
@@ -97,10 +98,10 @@ main {
     color: white;
     border: none;
     padding: 10px;
-    cursor: pointer;
+    cursor: not-allowed; /* Disabled cursor */
     border-radius: 4px;
 }
 
-.post-comment:hover {
-    background-color: #e64a19;
+.post-comment.disabled {
+    background-color: #e64a19; /* Darker Jingga for disabled */
 }
