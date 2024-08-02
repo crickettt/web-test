@@ -21,10 +21,10 @@
     <div class="container">
         <aside class="sidebar">
             <ul>
-                <li>Home</li>
-                <li>Popular</li>
-                <li>All</li>
-                <li>Top</li>
+                <li id="home">Home</li>
+                <li id="popular">Popular</li>
+                <li id="all">All</li>
+                <li id="top">Top</li>
             </ul>
         </aside>
         <main class="content">
@@ -38,13 +38,14 @@
                     <p class="post-text">This is an example of a Reddit-like post. The content goes here.</p>
                 </div>
                 <div class="post-actions">
-                    <span class="upvote">⬆️</span>
-                    <span class="downvote">⬇️</span>
-                    <span class="comments">💬 23 Comments</span>
+                    <span class="upvote" data-count="0">⬆️ <span class="count">0</span></span>
+                    <span class="downvote" data-count="0">⬇️ <span class="count">0</span></span>
+                    <span class="comments" data-count="23">💬 <span class="count">23</span> Comments</span>
                 </div>
             </section>
             <!-- Repeat the post section for more posts -->
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
