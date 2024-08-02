@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram-like Feed</title>
+    <title>Reddit-like Feed</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="header-left">
-            <img src="logo.png" alt="Logo" class="logo">
+        <div class="logo">
+            <img src="reddit-logo.png" alt="Reddit Logo">
         </div>
-        <div class="header-right">
-            <img src="home-icon.png" alt="Home" class="icon">
-            <img src="search-icon.png" alt="Search" class="icon">
-            <img src="reels-icon.png" alt="Reels" class="icon">
-            <img src="profile-icon.png" alt="Profile" class="icon">
+        <div class="search-bar">
+            <input type="text" placeholder="Search Reddit">
+        </div>
+        <div class="user-controls">
+            <img src="user-icon.png" alt="User Icon" class="icon">
         </div>
     </header>
-    <main>
-        <section class="post">
-            <div class="post-header">
-                <img src="profile.jpg" alt="Profile" class="profile-pic">
-                <span class="username">sobatsejarah</span>
-            </div>
-            <img src="post-image.jpg" alt="Post" class="post-image">
-            <div class="post-actions">
-                <img src="like-icon.png" alt="Like" class="icon">
-                <img src="comment-icon.png" alt="Comment" class="icon">
-                <img src="share-icon.png" alt="Share" class="icon">
-            </div>
-            <div class="post-caption">
-                <span class="username">sobatsejarah</span> HALO SOBAT SEJARAH...
-            </div>
-        </section>
-        <!-- Repeat the post section for more posts -->
-    </main>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Popular</li>
+                <li>All</li>
+                <li>Top</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section class="post">
+                <div class="post-header">
+                    <span class="subreddit">r/example</span>
+                    <span class="user">Posted by u/user 1 hour ago</span>
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">This is a Reddit-like post title</h2>
+                    <p class="post-text">This is an example of a Reddit-like post. The content goes here.</p>
+                </div>
+                <div class="post-actions">
+                    <span class="upvote">⬆️</span>
+                    <span class="downvote">⬇️</span>
+                    <span class="comments">💬 23 Comments</span>
+                </div>
+            </section>
+            <!-- Repeat the post section for more posts -->
+        </main>
+    </div>
 </body>
 </html>
