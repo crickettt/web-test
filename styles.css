@@ -6,80 +6,113 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color: #dae0e6;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid #ccc;
 }
 
-.header-left .logo {
+.logo img {
     height: 40px;
 }
 
-.header-right .icon {
+.search-bar input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-controls .icon {
     height: 24px;
-    margin-left: 20px;
     cursor: pointer;
 }
 
-main {
+.container {
+    display: flex;
     padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    background-color: #f6f7f8;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
 }
 
 .post {
     background-color: #fff;
-    border: 1px solid #dbdbdb;
     border-radius: 10px;
     margin-bottom: 20px;
-    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .post-header {
     display: flex;
-    align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.profile-pic {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.username {
+.subreddit {
     font-weight: bold;
+    color: #0079d3;
 }
 
-.post-image {
-    width: 100%;
-    display: block;
+.user {
+    color: #787c7e;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-title {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.post-text {
+    font-size: 1em;
+    color: #333;
 }
 
 .post-actions {
     display: flex;
-    padding: 10px;
+    align-items: center;
+    color: #787c7e;
 }
 
-.post-actions .icon {
-    height: 24px;
+.post-actions span {
     margin-right: 10px;
     cursor: pointer;
 }
 
-.post-caption {
-    padding: 10px;
-}
-
-.post-caption .username {
-    font-weight: bold;
-    margin-right: 5px;
+.post-actions span:hover {
+    color: #0079d3;
 }
