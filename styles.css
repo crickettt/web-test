@@ -12,7 +12,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ccc;
@@ -20,18 +20,6 @@ header {
 
 .logo img {
     height: 40px;
-}
-
-.search-bar input {
-    width: 400px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.user-controls .icon {
-    height: 24px;
-    cursor: pointer;
 }
 
 .container {
@@ -119,4 +107,20 @@ header {
 
 .count {
     font-weight: bold;
+}
+
+.search-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
