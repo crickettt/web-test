@@ -3,76 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Feed</title>
+    <title>Instagram-like Feed</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Explore Feed</h1>
-        </header>
-        <main>
-            <section id="posts">
-                <!-- Post 1 -->
-                <div class="post">
-                    <img src="example-image1.jpg" alt="Post Image 1">
-                    <div class="post-content">
-                        <p class="caption">Ini adalah caption contoh untuk postingan pertama.</p>
-                        <div class="actions">
-                            <button class="like-button disabled" disabled>
-                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
-                            </button>
-                            <button class="comment-button disabled" disabled>Comment</button>
-                            <div class="comments-section">
-                                <div class="comments-list"></div>
-                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
-                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
-                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Post 2 -->
-                <div class="post">
-                    <img src="example-image2.jpg" alt="Post Image 2">
-                    <div class="post-content">
-                        <p class="caption">Ini adalah caption contoh untuk postingan kedua.</p>
-                        <div class="actions">
-                            <button class="like-button disabled" disabled>
-                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
-                            </button>
-                            <button class="comment-button disabled" disabled>Comment</button>
-                            <div class="comments-section">
-                                <div class="comments-list"></div>
-                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
-                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
-                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Post 3 -->
-                <div class="post">
-                    <img src="example-image3.jpg" alt="Post Image 3">
-                    <div class="post-content">
-                        <p class="caption">Ini adalah caption contoh untuk postingan ketiga.</p>
-                        <div class="actions">
-                            <button class="like-button disabled" disabled>
-                                <span class="like-icon">&#9825;</span> Like (<span class="like-count">0</span>)
-                            </button>
-                            <button class="comment-button disabled" disabled>Comment</button>
-                            <div class="comments-section">
-                                <div class="comments-list"></div>
-                                <textarea class="comment-input" placeholder="Add a comment..." disabled></textarea>
-                                <input type="file" class="upload-image" onchange="previewImage(this)" disabled>
-                                <button class="post-comment" onclick="postComment(this)" disabled>Post</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="header-right">
+            <img src="home-icon.png" alt="Home" class="icon">
+            <img src="search-icon.png" alt="Search" class="icon">
+            <img src="reels-icon.png" alt="Reels" class="icon">
+            <img src="profile-icon.png" alt="Profile" class="icon">
+        </div>
+    </header>
+    <main>
+        <section class="post">
+            <div class="post-header">
+                <img src="profile.jpg" alt="Profile" class="profile-pic">
+                <span class="username">sobatsejarah</span>
+            </div>
+            <img src="post-image.jpg" alt="Post" class="post-image">
+            <div class="post-actions">
+                <img src="like-icon.png" alt="Like" class="icon">
+                <img src="comment-icon.png" alt="Comment" class="icon">
+                <img src="share-icon.png" alt="Share" class="icon">
+            </div>
+            <div class="post-caption">
+                <span class="username">sobatsejarah</span> HALO SOBAT SEJARAH...
+            </div>
+        </section>
+        <!-- Repeat the post section for more posts -->
+    </main>
 </body>
 </html>
