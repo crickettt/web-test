@@ -116,3 +116,7 @@ header {
 .post-actions span:hover {
     color: #0079d3;
 }
+
+.count {
+    font-weight: bold;
+}
