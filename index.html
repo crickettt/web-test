@@ -1,49 +1,48 @@
-semoga<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hitam Wir</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio dan Gambar</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="mana-logo.png" alt="Ini Logo">
-        </div>
-    </header>
-    <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li id="home">Home</li>
-                <li id="popular">Popular</li>
-                <li id="all">All</li>
-                <li id="top">Top</li>
-            </ul>
-        </aside>
-        <main class="content">
-            <section class="post">
-                <div class="post-header">
-                    <span class="subreddit">r/example</span>
-                    <span class="user">Posted by u/user 1 hour ago</span>
-                </div>
-                <div class="post-content">
-                    <h2 class="post-title">Serena Req Ubay Pending</h2>
-                    <img src="IMG_20240802_112113.jpg" width"200px" height"200px"</>
-                    <p class="post-text".>Perbaikan Jing!!</p>
-                </div>
-                <div class="post-actions">
-                    <span class="upvote" data-count="0">⬆️ <span class="count">0</span></span>
-                    <span class="downvote" data-count="0">⬇️ <span class="count">0</span></span>
-                    <span class="comments" data-count="23">💬 <span class="count">23</span> Comments</span>
-                </div>
-            </section>
-            <!-- Repeat the post section for more posts -->
-        </main>
-    </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Telusuri">
-    </div>
-    <script src="script.js"></script>
+  <div class="container">
+    <img src="./assets/gambar.png" alt="Gambar">
+    <audio controls>
+      <source src="./assets/audio.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung pemutar audio.
+    </audio>
+  </div>
 </body>
 </html>
