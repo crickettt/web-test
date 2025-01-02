@@ -1,29 +1,49 @@
+/* Styling untuk halaman */
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
 }
 
-.content {
+.container {
   text-align: center;
-  width: 90%;
-  max-width: 500px;
 }
 
-.image {
+button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Menyembunyikan elemen */
+.hidden {
+  display: none;
+}
+
+#imageContainer {
+  margin-top: 20px;
+  transition: transform 1s ease-in-out;
+}
+
+#image {
   width: 100%;
+  max-width: 600px;
   height: auto;
-  border: 2px solid #ddd;
+  border: 5px solid #ddd;
   border-radius: 10px;
-  margin-bottom: 20px;
-  cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
-}
-
-audio {
-  display: none; /* Sembunyikan pemutar audio */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
