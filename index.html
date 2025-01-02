@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,10 +11,17 @@
     <!-- Gambar JPEG -->
     <img src="gambar.jpeg" alt="Gambar" style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 20px;">
     <!-- Pemutar Audio MP3 otomatis -->
-    <audio controls autoplay style="width: 100%; outline: none;">
+    <audio controls autoplay muted style="width: 100%; outline: none;">
       <source src="audio.mp3" type="audio/mpeg">
       Browser Anda tidak mendukung pemutar audio.
     </audio>
   </div>
+
+  <script>
+    // Mengatasi kebijakan autoplay browser yang membatasi suara otomatis
+    const audio = document.querySelector('audio');
+    audio.muted = false; // Pastikan audio tidak dimute
+    audio.play(); // Mainkan audio setelah load
+  </script>
 </body>
 </html>
