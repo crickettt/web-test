@@ -1,4 +1,3 @@
-/* Style dasar untuk halaman */
 body {
   margin: 0;
   display: flex;
@@ -22,6 +21,7 @@ body {
   border: 2px solid #ddd;
   border-radius: 10px;
   margin-bottom: 20px;
+  cursor: pointer; /* Menunjukkan bahwa gambar dapat diklik */
 }
 
 audio {
