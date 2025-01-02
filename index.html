@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audio dan Gambar</title>
+  <title>Claim Giveaway</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="content">
-    <!-- Gambar JPEG -->
-    <img src="gambar.jpeg" alt="Gambar" class="image" id="image">
-    
-    <!-- Pemutar Audio MP3 tanpa tombol Play -->
-    <audio id="audio">
+  <div class="container">
+    <!-- Tombol Claim yang juga digunakan untuk play audio -->
+    <button id="claimButton">Claim Giveaway</button>
+
+    <!-- Gambar yang tersembunyi, yang akan muncul setelah tombol diklik -->
+    <div id="imageContainer" class="hidden">
+      <img src="gambar.jpeg" alt="Giveaway Image" id="image">
+    </div>
+
+    <!-- Pemutar Audio yang akan diputar setelah tombol diklik -->
+    <audio id="audio" class="hidden" autoplay>
       <source src="audio.mp3" type="audio/mpeg">
       Browser Anda tidak mendukung pemutar audio.
     </audio>
