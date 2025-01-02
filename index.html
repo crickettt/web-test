@@ -1,27 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audio dan Gambar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="margin: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; background-color: #f0f0f0; font-family: Arial, sans-serif;">
-  <div style="text-align: center; width: 90%; max-width: 500px;">
+<body>
+  <div class="content">
     <!-- Gambar JPEG -->
-    <img src="gambar.jpeg" alt="Gambar" style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 20px;">
-    <!-- Pemutar Audio MP3 otomatis -->
-    <audio controls autoplay muted style="width: 100%; outline: none;">
+    <img src="gambar.jpeg" alt="Gambar" class="image">
+    
+    <!-- Pemutar Audio MP3 tanpa tombol Play -->
+    <audio id="audio">
       <source src="audio.mp3" type="audio/mpeg">
       Browser Anda tidak mendukung pemutar audio.
     </audio>
   </div>
-
-  <script>
-    // Mengatasi kebijakan autoplay browser yang membatasi suara otomatis
-    const audio = document.querySelector('audio');
-    audio.muted = false; // Pastikan audio tidak dimute
-    audio.play(); // Mainkan audio setelah load
-  </script>
+  
+  <script src="script.js"></script>
 </body>
 </html>
