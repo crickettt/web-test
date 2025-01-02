@@ -4,43 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audio dan Gambar</title>
-  <style>
-    body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      min-height: 100vh;
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-    }
-
-    .container {
-      text-align: center;
-      width: 90%;
-      max-width: 500px;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-      border: 2px solid #ddd;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-      outline: none;
-    }
-  </style>
 </head>
-<body>
-  <div class="container">
-    <img src="./assets/gambar.jpeg" alt="Gambar">
-    <audio controls>
-      <source src="./assets/audio.mp3" type="audio/mpeg">
+<body style="margin: 0; display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 100vh; background-color: #f0f0f0; font-family: Arial, sans-serif;">
+  <div style="text-align: center; width: 90%; max-width: 500px;">
+    <!-- Gambar JPEG -->
+    <img src="gambar.jpeg" alt="Gambar" style="width: 100%; height: auto; border: 2px solid #ddd; border-radius: 10px; margin-bottom: 20px;">
+    <!-- Pemutar Audio MP3 otomatis -->
+    <audio controls autoplay style="width: 100%; outline: none;">
+      <source src="audio.mp3" type="audio/mpeg">
       Browser Anda tidak mendukung pemutar audio.
     </audio>
   </div>
